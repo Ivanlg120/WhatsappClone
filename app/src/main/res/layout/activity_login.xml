@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/barrasup"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/largura_logo"
+        android:layout_height="@dimen/altura_logo"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="105dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nomeid"
+        android:layout_width="369dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="Digite seu nome."
+        android:inputType="textPersonName"
+        android:textColor="@color/cornome"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/codpaisid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="+55"
+        android:inputType="number"
+        android:textColor="@color/cornome"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeid" />
+
+    <EditText
+        android:id="@+id/codareaid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="19"
+        android:inputType="number"
+        android:textColor="@color/cornome"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintStart_toEndOf="@+id/codpaisid"
+        app:layout_constraintTop_toBottomOf="@+id/nomeid" />
+
+    <EditText
+        android:id="@+id/telefoneid"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="98100-0000"
+        android:inputType="number"
+        android:textColor="@color/cornome"
+        android:textColorHint="@color/colorhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/codareaid"
+        app:layout_constraintTop_toBottomOf="@+id/nomeid" />
+
+    <Button
+        android:id="@+id/botcadastrarid"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="44dp"
+        android:background="@color/corsuperior"
+        android:text="@string/botaocadastrar"
+        android:textColor="@color/cornome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/codpaisid" />
+</androidx.constraintlayout.widget.ConstraintLayout>
